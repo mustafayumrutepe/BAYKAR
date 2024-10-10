@@ -10,22 +10,28 @@ import java.util.List;
 public class LocatorPage extends Parent{
     public LocatorPage() {PageFactory.initElements(GWD.getDriver(),this);}
 
-    @FindBy(xpath = "/html/body")          private WebElement body;
+    @FindBy(xpath = "/html/body")                                      private WebElement body;
     @FindBy(xpath = "(//*[@class='offcanvas-button']/li)[2]")          private WebElement language;
-    @FindBy(xpath = "(//*[@class='navbar-nav']/li)[1]/a")                private WebElement kariyer;
+    @FindBy(xpath = "(//*[@class='navbar-nav']/li)[1]/a")              private WebElement kariyer;
     @FindBy(xpath = "(//*[@class='navbar-nav']/li/ul/li)[1]")          private WebElement irtifa;
     @FindBy(xpath = "(//*[@class='navbar-nav']/li/ul/li)[2]")          private WebElement yerleskelerimiz;
     @FindBy(xpath = "(//*[@class='navbar-nav']/li/ul/li)[3]")          private WebElement yasam;
     @FindBy(xpath = "(//*[@class='navbar-nav']/li)[3]")                private WebElement pozisyonlar;
-    @FindBy(xpath = "(//*[@class='navbar-nav']/li)[5]/a")                private WebElement staj;
+    @FindBy(xpath = "(//*[@class='navbar-nav']/li)[5]/a")              private WebElement staj;
     @FindBy(xpath = "(//*[@class='navbar-nav']/li)[7]")                private WebElement sss;
     @FindBy(xpath = "(//*[@class='navbar-nav']/li)[9]")                private WebElement baykar;
     @FindBy(xpath = "//*[@class='top-btn']")                           private WebElement giris;
+    @FindBy(css = "[name='login']")                                    private WebElement email;
+    @FindBy(id = "id_password")                                        private WebElement password;
+    @FindBy(xpath = "//div[@class='g-recaptcha']")                     private WebElement recaptcha;
+    @FindBy(css = "[type='submit']")                                   private WebElement login;
+    @FindBy(id = "swal2-title")                                        private WebElement loginVerify;
+    @FindBy(partialLinkText = "Açık Pozisyonlar")                      private WebElement acikPozisyonlarBottom;
 
 
     public WebElement getWebElement(String strElement){
         switch (strElement){
-            case "body":                return this.body;
+            case "body":                    return this.body;
             case "language":                return this.language;
             case "kariyer":                 return this.kariyer;
             case "irtifa":                  return this.irtifa;
@@ -36,6 +42,12 @@ public class LocatorPage extends Parent{
             case "sss":                     return this.sss;
             case "baykar":                  return this.baykar;
             case "giris":                   return this.giris;
+            case "email":                   return this.email;
+            case "password":                return this.password;
+            case "recaptcha":               return this.recaptcha;
+            case "login":                   return this.login;
+            case "loginVerify":             return this.loginVerify;
+            case "acikPozisyonlarBottom":   return this.acikPozisyonlarBottom;
         }
         return null;
     }

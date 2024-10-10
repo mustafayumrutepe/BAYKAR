@@ -1,4 +1,7 @@
-Feature: Navigation Bar Functionality
+Feature: Navigation Bar Functionality.
+  Visitor can click on all navbar elements on the BaykarTech site
+  The visitor should be able to click on all navigation bar elements on the BaykarTech site and the pages should load smoothly.
+  The navbar automation should be dynamic, ensuring no updates are needed when new elements are added.
 
   Background:
     Given Navigate to website
