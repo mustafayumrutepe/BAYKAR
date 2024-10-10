@@ -39,6 +39,13 @@ public class Parent {
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
     }
 
+    public void verifyTextsAreEqual(WebElement element, String value){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        Assert.assertEquals(element.getAttribute("text").trim().toLowerCase(),value.trim().toLowerCase());
+        //action la ESC ye basarak açık kutucuk veya mesaj var ise kapat
+        new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
+    }
+
 //    public void myJsClick(WebElement element){
 //        wait.until(ExpectedConditions.elementToBeClickable(element));
 //        scrollToElement(element);

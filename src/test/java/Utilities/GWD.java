@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class GWD {
     private static WebDriver driver;
@@ -13,6 +15,7 @@ public class GWD {
 
         Locale.setDefault(new Locale("EN"));
         System.setProperty("user.language", "EN");
+        Logger.getLogger("org.openqa.selenium").setLevel(Level.SEVERE);
 
         if (driver==null) {
             driver = new ChromeDriver();

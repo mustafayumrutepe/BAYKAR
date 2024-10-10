@@ -5,6 +5,7 @@ Feature: Navigation Bar Functionality
     Then Language control
       | language | en |
 
+  @NavigationBar
   Scenario: Verify Navigation Bar Links
     When When user clicks a navbar item, they are redirected correctly
       | kariyer         | null                       |
