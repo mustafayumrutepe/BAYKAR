@@ -5,17 +5,11 @@ The project focuses on ensuring the quality and functionality of key features th
 
 
 Project Overview
-
 Manual Tests:
-
 Scope: Prepared test scenarios and documentation for the Baykar Kariyer website.
-
 Focus Areas: Navigation bar functionality, language switch validation, and job filtering/search functionality.
-
 Automation Tests:
-
 Language: Java
-
 Frameworks & Tools:
 JUnit/TestNG/Cucumber: Test structure and execution.
 Selenium WebDriver: Browser automation.
