@@ -2,9 +2,7 @@ package StepDefinitions;
 
 import Pages.LocatorPage;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -19,7 +17,7 @@ public class _04_Login {
         for (int i = 0; i < items.size(); i++) {
             WebElement element = lp.getWebElement(items.get(i).get(0));
             String text = items.get(i).get(1);
-            lp.mySendKeys(element,text);
+            lp.mySendKeys(element, text);
         }
     }
 
@@ -37,7 +35,7 @@ public class _04_Login {
         for (int i = 0; i < items.size(); i++) {
             WebElement element = lp.getWebElement(items.get(i).get(0));
             String text = items.get(i).get(1);
-            lp.verifyContainsText(element,text);
+            lp.verifyContainsText(element, text);
         }
     }
 }

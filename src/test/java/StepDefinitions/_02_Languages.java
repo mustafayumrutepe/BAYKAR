@@ -3,10 +3,7 @@ package StepDefinitions;
 import Pages.LocatorPage;
 import Utilities.GWD;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -31,13 +28,13 @@ public class _02_Languages {
             listOfLanguages.add(strLanguage);
         }
         System.out.println(listOfLanguages);
-        System.out.println("There is "+numberOfLanguages+" languages.");
+        System.out.println("There is " + numberOfLanguages + " languages.");
     }
 
     @Then("The available languages should include {string} and {string}")
     public void theAvailableLanguagesShouldIncludeAnd(String tr, String en) {
-            Assert.assertTrue(listOfLanguages.get(0).toLowerCase().trim().equals(tr));
-            Assert.assertTrue(listOfLanguages.get(1).toLowerCase().trim().equals(en));
+        Assert.assertTrue(listOfLanguages.get(0).toLowerCase().trim().equals(tr));
+        Assert.assertTrue(listOfLanguages.get(1).toLowerCase().trim().equals(en));
     }
 
 
@@ -46,11 +43,11 @@ public class _02_Languages {
         List<List<String>> items = dataTable.asLists(String.class);
         String url = GWD.getDriver().getCurrentUrl();
 
-        for (int i = 0; i < items.size(); i++){
-            WebElement element=lp.getWebElement(items.get(i).get(0));
+        for (int i = 0; i < items.size(); i++) {
+            WebElement element = lp.getWebElement(items.get(i).get(0));
             String text = items.get(i).get(1);
 
-            if (url.toLowerCase().contains(text.toLowerCase())){
+            if (url.toLowerCase().contains(text.toLowerCase())) {
                 lp.myClick(element);
             }
 
@@ -70,8 +67,8 @@ public class _02_Languages {
         List<List<String>> items = dataTable.asLists(String.class);
         for (int i = 0; i < items.size(); i++) {
             WebElement element = lp.getWebElement(items.get(i).get(0));
-            String text =  items.get(i).get(1);
-            lp.verifyTextsAreEqual(element,text);
+            String text = items.get(i).get(1);
+            lp.verifyTextsAreEqual(element, text);
         }
     }
 

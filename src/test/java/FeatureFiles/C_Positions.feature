@@ -10,16 +10,18 @@ Feature: Position search and filtering on BaykarTech career site
 
   @DataDriven
   Scenario Outline: User performs position search and filtering
-    Given The user clicks on the button
-    |acikPozisyonlarBottom|
-    Given the user selects "<department>" in the department filter
-    When the user enters "<position>" in the position field and clicks the search button
-    Then the titles of the search results should contain "<position>"
-    And the user clicks on the first position in the search results
+    Given The user clicks on the button at the bottom of the page
+      | acikPozisyonlarBottom |
+    Given The user selects "<department>" in the department filter
+      | birimAra |
+    When The user enters "<position>" in the search box
+      | searchBox |
+    And The user clicks on the first position in the search results "<position>"
     Then the position page title should match "<position>"
+      | positionPageTitle |
 
     Examples:
-      | department    | position               |
-      | Engineering    | Software Test Engineer  |
-      | Manufacturing | Production Engineer      |
-      | R&D           | Project Manager          |
+      | department     | position |
+      | Web Sistemleri | test     |
+      | bilişim        | kontrol  |
+      | elektrik       | batarya  |

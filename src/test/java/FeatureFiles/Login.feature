@@ -10,8 +10,8 @@ Feature: User Login
     Then The user clicks on the button
       | giris |
     And The user enters valid email and password.
-      | email    |mstfyumrutepe@gmail.com|
-      | password |Mstf51..|
+      | email    | mstfyumrutepe@gmail.com |
+      | password | Mstf51..                |
     And The user clicks on the button
       | recaptcha |
       | login     |

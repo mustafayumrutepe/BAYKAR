@@ -13,21 +13,21 @@ Feature: Language switching functionality on the Baykartech website
   @LanguageSwitch
   Scenario: Switch language and verify page elements
     When The user selects the language
-      | language | en |
-      | body | null |
+      | language | en   |
+      | body     | null |
     Then The page URL should contains this
       | tr |
     And The main page elements should be correctly displayed in this language
       | staj | staj |
 
     When The user selects the language
-      | language | tr |
-      | body | null |
+      | language | tr   |
+      | body     | null |
     Then The page URL should contains this
       | en |
     And The main page elements should be correctly displayed in this language
       | kariyer | career |
 
     And  The last control Select all texts
-      |body|
+      | body |
 
