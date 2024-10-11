@@ -1,5 +1,7 @@
 Baykar Kariyer Website Testing Project
+
 This repository contains the test automation and manual test documentation for the Baykar Kariyer (https://kariyer.baykartech.com/) website. The project focuses on ensuring the quality and functionality of key features through thorough manual and automated testing.
+
 
 Project Overview
 Manual Tests:
