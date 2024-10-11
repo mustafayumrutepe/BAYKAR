@@ -1,14 +1,21 @@
 Baykar Kariyer Website Testing Project
 
-This repository contains the test automation and manual test documentation for the Baykar Kariyer (https://kariyer.baykartech.com/) website. The project focuses on ensuring the quality and functionality of key features through thorough manual and automated testing.
+This repository contains the test automation and manual test documentation for the Baykar Kariyer (https://kariyer.baykartech.com/) website. 
+The project focuses on ensuring the quality and functionality of key features through thorough manual and automated testing.
 
 
 Project Overview
+
 Manual Tests:
+
 Scope: Prepared test scenarios and documentation for the Baykar Kariyer website.
+
 Focus Areas: Navigation bar functionality, language switch validation, and job filtering/search functionality.
+
 Automation Tests:
+
 Language: Java
+
 Frameworks & Tools:
 JUnit/TestNG/Cucumber: Test structure and execution.
 Selenium WebDriver: Browser automation.
