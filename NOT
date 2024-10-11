@@ -1,0 +1,15 @@
+1-  CAPTCHA olmasına rağmen bir Login senaryosu oluşturdum.
+
+    Normal şartlarda böyle bir durumda geliştiriciden otomasyon testi için
+    CAPTCHA yı devre dışı bırakması rica edilebilir.
+
+    Ya da bunun için google ın sağladığı anahtarlar kullanılabilir ben şimdilik burda bıraktım.
+
+
+
+2-  Manuel testler için yazdığım test case'ler ve manuel test dökümanları TestCases package'ı içindedirler.
+
+3-  Aplikasyonda bir tane bug buldum fakat sonra başka bilgisayarlarda düzgün çalıştığını farkettim.
+    Bu durum benim bilgisayarıma has olabilir ya da bazı bilgisayarlarda çalışamama gibi bir durum olabilir.
+    Yine de bunun için bir bug raporu oluşturdum ve bu raporu da yine test case raporlarıylar beraber
+    TestCases package'ı içine yükledim.
